@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/monitor', 'ManageController@index')->name('monitor');
+Route::get('/analytic', 'AnalyticController@index')->name('analytic');
+Route::get('/ecosystem', 'EcosystemController@index')->name('ecosystem');
