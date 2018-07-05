@@ -15,6 +15,7 @@
             <div class="navbar-header">
                 <a href="#" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="#" class="bars"></a>
+                <link href="{{ asset('images/smart_agriculture.png') }}"> 
                 <a class="navbar-brand" href="{{ route('home') }}">Smart Agriculture</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">

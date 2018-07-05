@@ -8,7 +8,7 @@
     <title>Smart Agriculture</title>
 
     <!-- Icon-->
-    <link rel="shortcut icon" href="{{ asset('images/leaf.png') }}">
+    <link rel="shortcut icon" href="{{ asset('images/smart_agriculture.png') }}">
 
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
