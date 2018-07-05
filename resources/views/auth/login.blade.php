@@ -3,7 +3,7 @@
 <body class="login-page">
     <div class="login-box">
         <div class="logo">
-            <a href="javascript:void(0);"><b>Smart Agriculture</b></a>
+            <a href="#"><b>Smart Agriculture</b></a>
             <small>Control Your Farm Increase Your Product</small>
         </div>
         <div class="card">
