@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="{{ asset('images/smart_agriculture.png') }}">
 
         <!-- Favicon-->
-        <link rel="icon" href="{{ URL::to('favicon.ico') }}" type="image/x-icon">
+        <link rel="icon" href="{{URL::to('favicon.ico') }}" type="image/x-icon">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -25,9 +25,6 @@
         <!-- Animation Css -->
         <link href="{{URL::to('plugins/animate-css/animate.css') }}" rel="stylesheet" />
 
-        <!-- Light Gallery Plugin Css -->
-        <link href="{{URL::to('plugins/light-gallery/css/lightgallery.css') }}" rel="stylesheet">
-
         <!-- Custom Css -->
         <link href="{{URL::to('css/style.css') }}" rel="stylesheet">
 
@@ -36,28 +33,6 @@
     </head>
 
     <body class="theme-green">
-        <!-- Page Loader -->
-        <div class="page-loader-wrapper">
-            <div class="loader">
-                <div class="preloader">
-                    <div class="spinner-layer pl-red">
-                        <div class="circle-clipper left">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="circle-clipper right">
-                            <div class="circle"></div>
-                        </div>
-                    </div>
-                </div>
-                <p>Please wait...</p>
-            </div>
-        </div>
-        <!-- #END# Page Loader -->
-
-        <!-- Overlay For Sidebars -->
-        <div class="overlay"></div>
-        <!-- #END# Overlay For Sidebars -->
-
         <!-- Search Bar -->
         <div class="search-bar">
             <div class="search-icon">
@@ -69,7 +44,7 @@
             </div>
         </div>
         <!-- #END# Search Bar -->
-
+        
         <!-- Top Bar -->
         <nav class="navbar">
             <div class="container-fluid">
@@ -198,74 +173,10 @@
             </div>
         </nav>
         <!-- #Top Bar -->
-
-        <!-- Content -->
-        <section class="content">
-            <div class="container-fluid">
-                <div class="block-header">
-                    <a href="{{ route('home.create') }}" class="btn btn-primary">ADD NEW PRODUCTS</a>
-                </div>
-               
-                <!-- Custom Content -->
-                <div class="row clearfix">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>
-                                    ALL AGRICULTURE PRODUCTS  
-                                </h2>
-                                <ul class="header-dropdown m-r--5">
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            <i class="material-icons">more_vert</i>
-                                        </a>
-                                        <ul class="dropdown-menu pull-right">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="row">
-                                    @foreach($items as $key=>$item)
-                                    <div class="col-sm-6 col-md-3">
-                                        <div class="thumbnail">
-                                            <a href="#">
-                                                    <img class="img-responsive" src="{{ asset('uploads/item/'.$item->product_image) }}">
-                                            </a>
-                                            <div class="caption">
-                                                <h3 style="text-align: center;">{{ $item->product_name }}</h3>
-                                                <h5>Season Name: <small>{{ $item->season_name }}</small></h5>
-                                                <h5>Season Manager: <small>{{ $item->season_manager }}</small></h5>
-                                                <h5>Start Date: <small>{{ $item->start_date }}</small></h5>
-                                                <h5>End Date: <small>{{ $item->start_date }}</small></h5>
-                                                <h5>Process: <small>{{ $item->process }}</small></h5>
-                                                <h5>Production Area: <small>{{ $item->production_area }}</small> m<sup>2</sup></h5>
-                                                
-                                                <p>
-                                                    <a href="#" class="btn btn-warning waves-effect" role="button">Edit</a>
-                                                    <a href="#" class="btn btn-danger waves-effect" role="button">Delete</a>
-                                                </p>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    @endforeach
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- #END# Custom Content -->
-            </div>
-        </section>
-        <!-- #END Content -->
-
+    
         <section>
             <!-- Left Sidebar -->
-            <aside id="leftsidebar" class="sidebar">
+                <aside id="leftsidebar" class="sidebar">
                     <!-- User Info -->
                     <div class="user-info">
                         <div class="image">
@@ -299,47 +210,7 @@
                     </div>
                     <!-- #User Info -->
 
-                    <!-- Menu -->
-                    <div class="menu">
-                        <ul class="list">
-                           
-                            <li class="active">
-                                <a href="{{route('home')}}">
-                                    <i class="material-icons">insert_invitation</i>
-                                    <span>Product Management</span>
-                                </a>
-                            </li>
-                           
-                            <li>
-                                <a href="{{ route('monitor') }}">
-                                    <i class="material-icons">desktop_mac</i>
-                                    <span>Product Monitoring</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ route('analytic') }}">
-                                    <i class="material-icons">insert_chart</i>
-                                    <span>Analytics</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ route('ecosystem') }}">
-                                    <i class="material-icons">widgets</i>
-                                    <span>Ecosystem</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="material-icons">swap_calls</i>
-                                    <span>Resource</span>
-                                </a>
-                            </li>
-                            <li>
-                             
-                        </ul>
-                    </div>
-                    <!-- #Menu -->
-
+                   
                     <!-- Footer -->
                     <div class="legal">
                         <div class="copyright">
@@ -350,37 +221,78 @@
                         </div>
                     </div>
                     <!-- #Footer -->
-            </aside>
-            <!-- #END# Left Sidebar -->  
+                </aside>
+                <!-- #END# Left Sidebar -->  
         </section>
 
-       
+        <section class="content">
+            <div class="container-fluid">
+               
+                <!-- Basic Table -->
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>
+                                    USER INFORMATION
+                                </h2>
+                            </div>
+                            @foreach($users as $user)
+                            <div class="body table-responsive">
 
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>USER NAME</th>
+                                            <th>USER EMAIL</th>
+                                            <th>ACTION</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            
+                                            <td>{{ $user->name }}</td>
+                                            <td>{{ $user->email }}</td>
+                                            <td>
+                                                <a href="{{ route('profile.edit', $user->id) }}" class="btn btn-warning waves-effect" role="button">Edit</a>
+                                                <a href="#" class="btn btn-danger waves-effect" role="button">Delete</a>    
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+                <!-- #END# Basic Table -->  
+            </div>
+        </section>
+
+        
         <!-- Jquery Core Js -->
-        <script src="{{URL::to('plugins/jquery/jquery.min.js') }}"></script>
+    <script src="{{URL::to('plugins/jquery/jquery.min.js') }}"></script>
 
-        <!-- Bootstrap Core Js -->
-        <script src="{{URL::to('plugins/bootstrap/js/bootstrap.js') }}"></script>
+    <!-- Bootstrap Core Js -->
+    <script src="{{URL::to('plugins/bootstrap/js/bootstrap.js') }}"></script>
 
-        <!-- Select Plugin Js -->
-        <script src="{{URL::to('plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>
+    <!-- Select Plugin Js -->
+    <script src="{{URL::to('plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>
 
-        <!-- Slimscroll Plugin Js -->
-        <script src="{{URL::to('plugins/jquery-slimscroll/jquery.slimscroll.js') }}"></script>
+    <!-- Slimscroll Plugin Js -->
+    <script src="{{URL::to('plugins/jquery-slimscroll/jquery.slimscroll.js') }}"></script>
 
-        <!-- Waves Effect Plugin Js -->
-        <script src="{{URL::to('plugins/node-waves/waves.js') }}"></script>
+    <!-- Waves Effect Plugin Js -->
+    <script src="{{URL::to('plugins/node-waves/waves.js') }}"></script>
 
-        <!-- Light Gallery Plugin Js -->
-        <script src="{{URL::to('plugins/light-gallery/js/lightgallery-all.js') }}"></script>
+    <!-- Light Gallery Plugin Js -->
+    <script src="{{URL::to('plugins/light-gallery/js/lightgallery-all.js') }}"></script>
 
-        <!-- Custom Js -->
-        <script src="{{URL::to('js/pages/medias/image-gallery.js') }}"></script>
-        <script src="{{URL::to('js/admin.js') }}"></script>
+    <!-- Custom Js -->
+    <script src="{{URL::to('js/pages/medias/image-gallery.js') }}"></script>
+    <script src="{{URL::to('js/admin.js') }}"></script>
 
-
-        <!-- Demo Js -->
-        <script src="{{URL::to('js/demo.js') }}"></script>
+    <!-- Demo Js -->
+    <script src="{{URL::to('js/demo.js') }}"></script>
     </body>
-
 </html>

@@ -40,7 +40,7 @@
         <link href="{{URL::to('css/themes/all-themes.css') }}" rel="stylesheet" />
     </head>
 
-    <body class="theme-red">
+    <body class="theme-green">
         <!-- Page Loader -->
         <div class="page-loader-wrapper">
             <div class="loader">
@@ -204,7 +204,7 @@
         </nav>
         <!-- #Top Bar -->
 
-         <section class="content">
+        <section class="content">
             <div class="container-fluid">
                 <div class="row clearfix">
                    <!-- With Captions -->
@@ -226,9 +226,23 @@
                                                 <h3>First slide label</h3>
                                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                             </div>
-                                        </div>
-                                        
+                                        </div>  
+                                        <div class="item">
+                                            <img src="{{URL::to('images/image-gallery/11.jpg') }}" />
+                                            <div class="carousel-caption">
+                                                <h3>First slide label</h3>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                            </div>
+                                        </div>        
+                                        <div class="item">
+                                            <img src="{{URL::to('images/image-gallery/11.jpg') }}" />
+                                            <div class="carousel-caption">
+                                                <h3>First slide label</h3>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                            </div>
+                                        </div>                                              
                                     </div>
+
                                     <!-- Controls -->
                                     <a class="left carousel-control" href="#carousel-example-generic_2" role="button" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -293,13 +307,7 @@
                     </div>
                     <!-- #END# With Captions -->
                 </div>
-            </div>
-        </section>
 
-
-        <section class="content">
-            <div class="container-fluid">       
-                
                 <!-- Multi Column -->
                 <div class="row clearfix">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -436,7 +444,6 @@
             </div>
         </section>
 
-
         <section>
             <!-- Left Sidebar -->
                 <aside id="leftsidebar" class="sidebar">
@@ -558,8 +565,6 @@
 
         <!-- Demo Js -->
         <script src="{{URL::to('js/demo.js') }}"></script>
-
-
     </body>
 
 </html>

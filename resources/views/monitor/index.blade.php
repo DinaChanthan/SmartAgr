@@ -32,7 +32,7 @@
         <link href="{{URL::to('css/themes/all-themes.css') }}" rel="stylesheet" />
     </head>
 
-    <body class="theme-red ls-opened">
+    <body class="theme-green ls-opened">
         <!-- Page Loader -->
         <div class="page-loader-wrapper">
             <div class="loader">

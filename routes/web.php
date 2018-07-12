@@ -25,3 +25,5 @@ Route::post('/store', 'HomeController@store')->name('home.store');
 Route::get('/monitor', 'MonitorController@index')->name('monitor');
 Route::get('/analytic', 'AnalyticController@index')->name('analytic');
 Route::get('/ecosystem', 'EcosystemController@index')->name('ecosystem');
+
+Route::resource('profile', 'ProfileController');

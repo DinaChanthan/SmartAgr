@@ -34,7 +34,7 @@
         <link rel="stylesheet" href="{{asset('css/mystyle.css') }}">
     </head>
 
-    <body class="theme-red">
+    <body class="theme-green">
 
         <!-- Page Loader -->
         <div class="page-loader-wrapper">

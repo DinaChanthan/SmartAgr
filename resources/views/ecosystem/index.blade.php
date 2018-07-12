@@ -35,7 +35,7 @@
         <link href="{{URL::to('css/themes/all-themes.css') }}" rel="stylesheet" />
     </head>
 
-    <body class="theme-red">
+    <body class="theme-green">
         <!-- Page Loader -->
         <div class="page-loader-wrapper">
             <div class="loader">
@@ -285,7 +285,7 @@
         </section>
 
 
-       <!-- Jquery Core Js -->
+    <!-- Jquery Core Js -->
     <script src="{{URL::to('plugins/jquery/jquery.min.js') }}"></script>
 
     <!-- Bootstrap Core Js -->
