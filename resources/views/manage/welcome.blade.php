@@ -36,23 +36,7 @@
     </head>
 
     <body class="theme-red">
-        <!-- Page Loader -->
-        <div class="page-loader-wrapper">
-            <div class="loader">
-                <div class="preloader">
-                    <div class="spinner-layer pl-red">
-                        <div class="circle-clipper left">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="circle-clipper right">
-                            <div class="circle"></div>
-                        </div>
-                    </div>
-                </div>
-                <p>Please wait...</p>
-            </div>
-        </div>
-        <!-- #END# Page Loader -->
+        
 
         <!-- Overlay For Sidebars -->
         <div class="overlay"></div>
@@ -107,7 +91,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
+                                            <a href="#">
                                                 <div class="icon-circle bg-cyan">
                                                     <i class="material-icons">add_shopping_cart</i>
                                                 </div>
@@ -120,7 +104,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
+                                            <a href="#">
                                                 <div class="icon-circle bg-red">
                                                     <i class="material-icons">delete_forever</i>
                                                 </div>
@@ -133,7 +117,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
+                                            <a href="#">
                                                 <div class="icon-circle bg-orange">
                                                     <i class="material-icons">mode_edit</i>
                                                 </div>
@@ -146,7 +130,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
+                                            <a href="#">
                                                 <div class="icon-circle bg-blue-grey">
                                                     <i class="material-icons">comment</i>
                                                 </div>
@@ -159,7 +143,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
+                                            <a href="#">
                                                 <div class="icon-circle bg-light-green">
                                                     <i class="material-icons">cached</i>
                                                 </div>
@@ -172,7 +156,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
+                                            <a href="#">
                                                 <div class="icon-circle bg-purple">
                                                     <i class="material-icons">settings</i>
                                                 </div>
@@ -199,68 +183,20 @@
         </nav>
         <!-- #Top Bar -->
 
+        <!-- Content -->
         <section class="content">
             <div class="container-fluid">
                 <div class="block-header">
-                    <h2>DASHBOARD</h2>
+                    <a href="{{ route('home.create') }}" class="btn btn-primary">ADD NEW PRODUCTS</a>
                 </div>
-                <!-- Widgets -->
+               
+                <!-- Custom Content -->
                 <div class="row clearfix">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box bg-pink hover-expand-effect">
-                            <div class="icon">
-                                <i class="material-icons">playlist_add_check</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">NEW TASKS</div>
-                                <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box bg-cyan hover-expand-effect">
-                            <div class="icon">
-                                <i class="material-icons">help</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">NEW TICKETS</div>
-                                <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box bg-light-green hover-expand-effect">
-                            <div class="icon">
-                                <i class="material-icons">forum</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">NEW COMMENTS</div>
-                                <div class="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box bg-orange hover-expand-effect">
-                            <div class="icon">
-                                <i class="material-icons">person_add</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">NEW VISITORS</div>
-                                <div class="number count-to" data-from="0" data-to="1225" data-speed="1000" data-fresh-interval="20"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- #END# Widgets -->
-
-                <!-- Image Gallery -->
-                <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    ALL AGRICULTURE PRODUCTS
-                                    
+                                    ALL AGRICULTURE PRODUCTS  
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
                                     <li class="dropdown">
@@ -276,114 +212,40 @@
                                 </ul>
                             </div>
                             <div class="body">
-                                <div id="aniimated-thumbnials" class="list-unstyled row clearfix">
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/1.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-1.jpg') }}">
-                                        </a>
+                                <div class="row">
+                                    @foreach($items as $key=>$item)
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                    <img class="img-responsive" src="{{ asset('uploads/item/'.$item->product_image) }}">
+                                                </a>
+                                            <div class="caption">
+                                                <h3 style="text-align: center;">{{ $item->product_name }}</h3>
+                                                <h5>Season Name: <small>{{ $item->season_name }}</small></h5>
+                                                <h5>Season Manager: <small>{{ $item->season_manager }}</small></h5>
+                                                <h5>Start Date: <small>{{ $item->start_date }}</small></h5>
+                                                <h5>End Date: <small>{{ $item->start_date }}</small></h5>
+                                                <h5>Process: <small>{{ $item->process }}</small></h5>
+                                                <h5>Production Area: <small>{{ $item->production_area }}</small> m<sup>2</sup></h5>
+                                                
+                                                <p>
+                                                    <a href="#" class="btn btn-warning waves-effect" role="button">Edit</a>
+                                                    <a href="#" class="btn btn-danger waves-effect" role="button">Delete</a>
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/2.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-2.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/3.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-3.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/4.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-4.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/5.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-5.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/6.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-6.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/7.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-7.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/8.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-8.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/9.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-9.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/10.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-10.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/11.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-11.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/12.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-12.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/13.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-13.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/14.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-14.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/15.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-15.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/16.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-16.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/17.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-17.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/18.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-18.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/19.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-19.jpg') }}">
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                        <a href="{{URL::to('images/image-gallery/20.jpg') }}" data-sub-html="Demo Description">
-                                            <img class="img-responsive thumbnail" src="{{URL::to('images/image-gallery/thumb/thumb-20.jpg') }}">
-                                        </a>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- #END# Custom Content -->
             </div>
         </section>
+        <!-- #END Content -->
 
         <section>
             <!-- Left Sidebar -->
@@ -497,6 +359,7 @@
         <!-- Custom Js -->
         <script src="{{URL::to('js/pages/medias/image-gallery.js') }}"></script>
         <script src="{{URL::to('js/admin.js') }}"></script>
+
 
         <!-- Demo Js -->
         <script src="{{URL::to('js/demo.js') }}"></script>

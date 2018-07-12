@@ -30,9 +30,12 @@
 
         <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
         <link href="{{URL::to('css/themes/all-themes.css') }}" rel="stylesheet" />
+
+        <link rel="stylesheet" href="{{asset('css/mystyle.css') }}">
     </head>
 
-    <body class="theme-red ls-opened">
+    <body class="theme-red">
+
         <!-- Page Loader -->
         <div class="page-loader-wrapper">
             <div class="loader">
@@ -197,7 +200,7 @@
         <!-- #Top Bar -->
         <section>
             <!-- Left Sidebar -->
-            <aside id="leftsidebar" class="sidebar">
+           <aside id="leftsidebar" class="sidebar">
                 <!-- User Info -->
                 <div class="user-info">
                     <div class="image">
@@ -212,7 +215,7 @@
                                 <li><a href="#"><i class="material-icons">person</i>Profile</a></li>
                                 <li role="seperator" class="divider"></li>
                                 <li><a href="#"><i class="material-icons">group</i>Followers</a></li>
-                                <li><a href="#"><i class="material-icons">shopping_cart</i>Sales</a></li>
+                                <li><a href="#;"><i class="material-icons">shopping_cart</i>Sales</a></li>
                                 <li><a href="#"><i class="material-icons">favorite</i>Likes</a></li>
                                 <li role="seperator" class="divider"></li>
                                 <li>
@@ -228,7 +231,6 @@
                     </div>
                 </div>
                 <!-- #User Info -->
-
                 <!-- Menu -->
                 <div class="menu">
                     <ul class="list">
@@ -240,13 +242,13 @@
                             </a>
                         </li>
                        
-                        <li class="active">
+                        <li>
                             <a href="{{ route('monitor') }}">
                                 <i class="material-icons">desktop_mac</i>
                                 <span>Product Monitoring</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="{{ route('analytic') }}">
                                 <i class="material-icons">insert_chart</i>
                                 <span>Analytics</span>
@@ -269,11 +271,10 @@
                     </ul>
                 </div>
                 <!-- #Menu -->
-
                 <!-- Footer -->
                 <div class="legal">
                     <div class="copyright">
-                        &copy; 2018 - 2019 <a href="{{ route('monitor') }}">Smart Agriculture</a>.
+                        &copy; 2018 - 2019 <a href="{{ route('analytic') }}">Smart Agriculture</a>.
                     </div>
                     <div class="version">
                         <b>Version: </b> 1.0.0
@@ -281,218 +282,178 @@
                 </div>
                 <!-- #Footer -->
             </aside>
-            <!-- #END# Left Sidebar -->  
+            <!-- #END# Left Sidebar -->   
         </section>
 
         <section class="content">
             <div class="container-fluid">   
-                <!-- Basic Examples -->
+
+                <!-- Real-Time Chart -->
                 <div class="row clearfix">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="card">
                             <div class="header">
-                                <h2>
-                                    Notification
-                                </h2>
+                                <h2>REAL-TIME CHART</h2>
+                                <div class="pull-right">
+                                    <div class="switch panel-switch-btn">
+                                        <span class="m-r-10 font-12">REAL TIME</span>
+                                        <label>OFF<input type="checkbox" id="realtime" checked><span class="lever switch-col-cyan"></span>ON</label>
+                                    </div>
+                                </div>
                                 <ul class="header-dropdown m-r--5">
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                             <i class="material-icons">more_vert</i>
                                         </a>
                                         <ul class="dropdown-menu pull-right">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
+                                            <li><a href="javascript:void(0);">Action</a></li>
+                                            <li><a href="javascript:void(0);">Another action</a></li>
+                                            <li><a href="javascript:void(0);">Something else here</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </div>
                             <div class="body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
-                                        <thead>
-                                            <tr>
-                                                <th>Time</th>
-                                                <th>Kind</th>
-                                                <th>User</th>
-                                                <th>Action</th>
-                                                <th>Start date</th>
-                                                <th>Description</th>
-                                            </tr>
-                                        </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Time</th>
-                                                <th>Kind</th>
-                                                <th>User</th>
-                                                <th>Action</th>
-                                                <th>Start date</th>
-                                                <th>Description</th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>   
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>                            
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>                            
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>                            
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>                                                              <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>                           
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>                                                            
-                                        </tbody>
-                                    </table>
-                                </div>
+                                <div id="real_time_chart" class="flot-chart"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- #END# Basic Examples -->
+                <!-- #END# Real-Time Chart -->
+                <!-- Multiple Axis -->
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>MULTIPLE AXIS</h2>
+                                <ul class="header-dropdown m-r--5">
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">more_vert</i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li><a href="javascript:void(0);">Action</a></li>
+                                            <li><a href="javascript:void(0);">Another action</a></li>
+                                            <li><a href="javascript:void(0);">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div id="multiple_axis_chart" class="flot-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #END# Multiple Axis -->
+                <!-- Tracking -->
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>TRACKING</h2>
+                                <ul class="header-dropdown m-r--5">
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">more_vert</i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li><a href="javascript:void(0);">Action</a></li>
+                                            <li><a href="javascript:void(0);">Another action</a></li>
+                                            <li><a href="javascript:void(0);">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div id="tracking_chart" class="flot-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #END# Tracking -->
+                <div class="row clearfix">
+                    <!-- Pie Chart -->
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>PIE CHART</h2>
+                                <ul class="header-dropdown m-r--5">
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">more_vert</i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li><a href="javascript:void(0);">Action</a></li>
+                                            <li><a href="javascript:void(0);">Another action</a></li>
+                                            <li><a href="javascript:void(0);">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div id="pie_chart" class="flot-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #END# Pie Chart -->
+                    <!-- Bar Chart -->
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>BAR CHART</h2>
+                                <ul class="header-dropdown m-r--5">
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">more_vert</i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li><a href="javascript:void(0);">Action</a></li>
+                                            <li><a href="javascript:void(0);">Another action</a></li>
+                                            <li><a href="javascript:void(0);">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div id="bar_chart" class="flot-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #END# Bar Chart -->
+                </div>
             </div>
         </section>
 
 
-    <!-- Jquery Core Js -->
-    <script src="{{URL::to('plugins/jquery/jquery.min.js') }}"></script>
+        <!-- Jquery Core Js -->
+        <script src="{{URL::to('plugins/jquery/jquery.min.js') }}"></script>
 
-    <!-- Bootstrap Core Js -->
-    <script src="{{URL::to('plugins/bootstrap/js/bootstrap.js') }}"></script>
+        <!-- Bootstrap Core Js -->
+        <script src="{{URL::to('plugins/bootstrap/js/bootstrap.js') }}"></script>
 
-    <!-- Select Plugin Js -->
-    <script src="{{URL::to('plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>
+        <!-- Select Plugin Js -->
+        <script src="{{URL::to('plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>
 
-    <!-- Slimscroll Plugin Js -->
-    <script src="{{URL::to('plugins/jquery-slimscroll/jquery.slimscroll.js') }}"></script>
+        <!-- Slimscroll Plugin Js -->
+        <script src="{{URL::to('plugins/jquery-slimscroll/jquery.slimscroll.js') }}"></script>
 
-    <!-- Waves Effect Plugin Js -->
-    <script src="{{URL::to('plugins/node-waves/waves.js') }}"></script>
+        <!-- Waves Effect Plugin Js -->
+        <script src="{{URL::to('plugins/node-waves/waves.js') }}"></script>
 
-    <!-- Light Gallery Plugin Js -->
-    <script src="{{URL::to('plugins/light-gallery/js/lightgallery-all.js') }}"></script>
+        <!-- Flot Chart Plugins Js -->
+        <script src="{{URL::to('plugins/flot-charts/jquery.flot.js') }}"></script>
+        <script src="{{URL::to('plugins/flot-charts/jquery.flot.resize.js') }}"></script>
+        <script src="{{URL::to('plugins/flot-charts/jquery.flot.pie.js') }}"></script>
+        <script src="{{URL::to('plugins/flot-charts/jquery.flot.categories.js') }}"></script>
+        <script src="{{URL::to('plugins/flot-charts/jquery.flot.time.js') }}"></script>
 
-    <!-- Custom Js -->
-    <script src="{{URL::to('js/pages/medias/image-gallery.js') }}"></script>
-    <script src="{{URL::to('js/admin.js') }}"></script>
+        <!-- Custom Js -->
+        <script src="{{URL::to('js/admin.js') }}"></script>
+        <script src="{{URL::to('js/pages/charts/flot.js') }}"></script>
 
-    <!-- Demo Js -->
-    <script src="{{URL::to('js/demo.js') }}"></script>
+        <!-- Demo Js -->
+        <script src="{{URL::to('js/demo.js') }}"></script>
     </body>
+
 </html>
