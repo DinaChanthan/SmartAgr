@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -81,7 +80,7 @@
                 <div class="navbar-header">
                     <a href="#" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                     <a href="#" class="bars"></a>
-                    <a class="navbar-brand" href="{{ route('home') }}">Smart Agriculture</a>
+                    <a class="navbar-brand" href="{{ route('manages.index') }}">Smart Agriculture</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -221,21 +220,21 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="item active">
-                                            <img src="{{URL::to('images/image-gallery/11.jpg') }}" />
+                                            <img src="{{URL::to('images/image-gallery/22.jpg') }}" />
                                             <div class="carousel-caption">
                                                 <h3>First slide label</h3>
                                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                             </div>
                                         </div>  
                                         <div class="item">
-                                            <img src="{{URL::to('images/image-gallery/11.jpg') }}" />
+                                            <img src="{{URL::to('images/image-gallery/23.jpg') }}" />
                                             <div class="carousel-caption">
                                                 <h3>First slide label</h3>
                                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                             </div>
                                         </div>        
                                         <div class="item">
-                                            <img src="{{URL::to('images/image-gallery/11.jpg') }}" />
+                                            <img src="{{URL::to('images/image-gallery/25.jpg') }}" />
                                             <div class="carousel-caption">
                                                 <h3>First slide label</h3>
                                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -271,21 +270,21 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="item active">
-                                            <img src="{{URL::to('images/image-gallery/11.jpg') }}" />
+                                            <img src="{{URL::to('images/image-gallery/22.jpg') }}" />
                                             <div class="carousel-caption">
                                                 <h3>First slide label</h3>
                                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img src="{{URL::to('images/image-gallery/12.jpg') }}" />
+                                            <img src="{{URL::to('images/image-gallery/23.jpg') }}" />
                                             <div class="carousel-caption">
                                                 <h3>Second slide label</h3>
                                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img src="{{URL::to('images/image-gallery/13.jpg') }}" />
+                                            <img src="{{URL::to('images/image-gallery/25.jpg') }}" />
                                             <div class="carousel-caption">
                                                 <h3>Third slide label</h3>
                                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -330,7 +329,7 @@
                                 </ul>
                             </div>
                             <div class="body">
-                                <form method="POST" action="{{ route('home.store') }}" enctype="multipart/form-data">
+                                <form method="POST" action="{{ route('manages.store') }}" enctype="multipart/form-data">
                                 @csrf
                                     <div class="row clearfix">
                                         <div class="col-md-6">
@@ -433,7 +432,7 @@
                                         </div>
                                     </div>
 
-                                    <a href="{{ route('home') }}" class="btn btn-danger m-t-15 waves-effect">Back</a>
+                                    <a href="{{ route('manages.index') }}" class="btn btn-danger m-t-15 waves-effect">Back</a>
                                     <button type="submit" class="btn btn-primary m-t-15 waves-effect">ADD PRODUCT</button>
                                 </form>
                             </div>
@@ -450,7 +449,7 @@
                     <!-- User Info -->
                     <div class="user-info">
                         <div class="image">
-                            <img src="images/user.png" width="48" height="48" alt="User" />
+                            <img src="{{URL::to('images/user.png') }}" width="48" height="48" alt="User" />
                         </div>
                         <div class="info-container">
                             <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}</div>
@@ -483,7 +482,7 @@
                         <ul class="list">
                            
                             <li class="active">
-                                <a href="{{route('home')}}">
+                                <a href="{{route('manages.index')}}">
                                     <i class="material-icons">insert_invitation</i>
                                     <span>Product Management</span>
                                 </a>

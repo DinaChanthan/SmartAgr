@@ -17,13 +17,13 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/create', 'HomeController@create')->name('home.create');
-Route::post('/store', 'HomeController@store')->name('home.store');
+Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+Route::get('/manage', 'HomeController@manage')->name('manage');
 
+Route::resource('manages', 'ManageController');
 
 Route::get('/monitor', 'MonitorController@index')->name('monitor');
 Route::get('/analytic', 'AnalyticController@index')->name('analytic');
 Route::get('/ecosystem', 'EcosystemController@index')->name('ecosystem');
 
-Route::resource('profile', 'ProfileController');
+

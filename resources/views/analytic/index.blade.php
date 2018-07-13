@@ -76,7 +76,7 @@
                 <div class="navbar-header">
                     <a href="#" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                     <a href="#" class="bars"></a>
-                    <a class="navbar-brand" href="{{ route('home') }}">Smart Agriculture</a>
+                    <a class="navbar-brand" href="{{ route('manages.index') }}">Smart Agriculture</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -236,7 +236,7 @@
                     <ul class="list">
                        
                         <li>
-                            <a href="{{route('home')}}">
+                            <a href="{{route('manages.index')}}">
                                 <i class="material-icons">insert_invitation</i>
                                 <span>Product Management</span>
                             </a>
