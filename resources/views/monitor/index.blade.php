@@ -195,6 +195,529 @@
             </div>
         </nav>
         <!-- #Top Bar -->
+
+        <section class="content">
+            <div class="container-fluid">
+                <!-- Tabs With Icon Title -->
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>
+                                    PRODUCT MORNITORING
+                                </h2>
+                                <ul class="header-dropdown m-r--5">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="material-icons">more_vert</i>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#home_with_icon_title" data-toggle="tab">
+                                            <i class="material-icons">wb_sunny</i> WEATHER INFO
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#profile_with_icon_title" data-toggle="tab">
+                                            <i class="material-icons">brightness_6</i> WEATHER HISTORY
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#messages_with_icon_title" data-toggle="tab">
+                                            <i class="material-icons">notifications</i> NOTIFICATIONS
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#settings_with_icon_title" data-toggle="tab">
+                                            <i class="material-icons">settings</i> Control Panel
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="home_with_icon_title">
+                                        <!-- Custom Content -->
+                                        <div class="row clearfix">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="header">
+                                                    <h2>
+                                                        WEATHER FORECAST                                                         
+                                                    </h2>                                                      
+                                                </div>
+                                                <div class="body">
+                                                    <div class="row">
+                                                        <div class="col-sm-6 col-md-3">
+                                                            <div class="thumbnail">
+                                                                <img style="width: 40%" src="images/weather.png">
+                                                                <div style="text-align: center" class="caption">
+                                                                    <h3>Thunderstorm</h3>
+                                                                    <p>Temperature: 24/30 <sup>o</sup>C</p>
+                                                                    <p>Sun light (UV): 24 lx</p>
+                                                                    <p>Humidity: 70%</p>
+                                                                    <p>Wind Speed: 10m/s</p>
+                                                                    <p>Rain Probability: 72%</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-3">
+                                                            <div class="thumbnail">
+                                                                <img style="width: 40%" src="images/weather.png">
+                                                                <div style="text-align: center" class="caption">
+                                                                    <h3>Thunderstorm</h3>
+                                                                    <p>Temperature: 24/30 <sup>o</sup>C</p>
+                                                                    <p>Sun light (UV): 24 lx</p>
+                                                                    <p>Humidity: 70%</p>
+                                                                    <p>Wind Speed: 10m/s</p>
+                                                                    <p>Rain Probability: 72%</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-3">
+                                                            <div class="thumbnail">
+                                                                <img style="width: 40%" src="images/weather.png">
+                                                                <div style="text-align: center" class="caption">
+                                                                    <h3>Thunderstorm</h3>
+                                                                    <p>Temperature: 24/30 <sup>o</sup>C</p>
+                                                                    <p>Sun light (UV): 24 lx</p>
+                                                                    <p>Humidity: 70%</p>
+                                                                    <p>Wind Speed: 10m/s</p>
+                                                                    <p>Rain Probability: 72%</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-3">
+                                                            <div class="thumbnail">
+                                                                <img style="width: 40%" src="images/weather.png">
+                                                                <div style="text-align: center" class="caption">
+                                                                    <h3>Thunderstorm</h3>
+                                                                    <p>Temperature: 24/30 <sup>o</sup>C</p>
+                                                                    <p>Sun light (UV): 24 lx</p>
+                                                                    <p>Humidity: 70%</p>
+                                                                    <p>Wind Speed: 10m/s</p>
+                                                                    <p>Rain Probability: 72%</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-3">
+                                                            <div class="thumbnail">
+                                                                <img style="width: 40%" src="images/weather.png">
+                                                                <div style="text-align: center" class="caption">
+                                                                    <h3>Thunderstorm</h3>
+                                                                    <p>Temperature: 24/30 <sup>o</sup>C</p>
+                                                                    <p>Sun light (UV): 24 lx</p>
+                                                                    <p>Humidity: 70%</p>
+                                                                    <p>Wind Speed: 10m/s</p>
+                                                                    <p>Rain Probability: 72%</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-3">
+                                                            <div class="thumbnail">
+                                                                <img style="width: 40%" src="images/weather.png">
+                                                                <div style="text-align: center" class="caption">
+                                                                    <h3>Thunderstorm</h3>
+                                                                    <p>Temperature: 24/30 <sup>o</sup>C</p>
+                                                                    <p>Sun light (UV): 24 lx</p>
+                                                                    <p>Humidity: 70%</p>
+                                                                    <p>Wind Speed: 10m/s</p>
+                                                                    <p>Rain Probability: 72%</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-3">
+                                                            <div class="thumbnail">
+                                                                <img style="width: 40%" src="images/weather.png">
+                                                                <div style="text-align: center" class="caption">
+                                                                    <h3>Thunderstorm</h3>
+                                                                    <p>Temperature: 24/30 <sup>o</sup>C</p>
+                                                                    <p>Sun light (UV): 24 lx</p>
+                                                                    <p>Humidity: 70%</p>
+                                                                    <p>Wind Speed: 10m/s</p>
+                                                                    <p>Rain Probability: 72%</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-3">
+                                                            <div class="thumbnail">
+                                                                <img style="width: 40%" src="images/weather.png">
+                                                                <div style="text-align: center" class="caption">
+                                                                    <h3>Thunderstorm</h3>
+                                                                    <p>Temperature: 24/30 <sup>o</sup>C</p>
+                                                                    <p>Sun light (UV): 24 lx</p>
+                                                                    <p>Humidity: 70%</p>
+                                                                    <p>Wind Speed: 10m/s</p>
+                                                                    <p>Rain Probability: 72%</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- #END# Custom Content -->
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="profile_with_icon_title">
+                                        <!-- Real-Time Chart -->
+                                        <div class="row clearfix">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="header">
+                                                    <h2>
+                                                        ALL HISTORY                                                    
+                                                    </h2>                                                      
+                                                </div>
+                                                <div class="card">
+                                                    <div class="header">
+                                                        <h2>REAL-TIME CHART</h2>
+                                                        <div class="pull-right">
+                                                            <div class="switch panel-switch-btn">
+                                                                <span class="m-r-10 font-12">REAL TIME</span>
+                                                                <label>OFF<input type="checkbox" id="realtime" checked><span class="lever switch-col-cyan"></span>ON</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div id="real_time_chart" class="flot-chart"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- #END# Real-Time Chart -->
+                                        <!-- Multiple Axis -->
+                                        <div class="row clearfix">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="card">
+                                                    <div class="header">
+                                                        <h2>MULTIPLE AXIS</h2>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div id="multiple_axis_chart" class="flot-chart"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- #END# Multiple Axis -->
+                                        <!-- Tracking -->
+                                        <div class="row clearfix">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="card">
+                                                    <div class="header">
+                                                        <h2>TRACKING</h2>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div id="tracking_chart" class="flot-chart"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- #END# Tracking -->
+                                        <div class="row clearfix">
+                                            <!-- Pie Chart -->
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                <div class="card">
+                                                    <div class="header">
+                                                        <h2>PIE CHART</h2>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div id="pie_chart" class="flot-chart"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #END# Pie Chart -->
+                                            <!-- Bar Chart -->
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                <div class="card">
+                                                    <div class="header">
+                                                        <h2>BAR CHART</h2>
+                                                        <ul class="header-dropdown m-r--5">
+                                                            <li class="dropdown">
+                                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="material-icons">more_vert</i>
+                                                                </a>
+                                                                <ul class="dropdown-menu pull-right">
+                                                                    <li><a href="#">Action</a></li>
+                                                                    <li><a href="#">Another action</a></li>
+                                                                    <li><a href="#">Something else here</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div id="bar_chart" class="flot-chart"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- #END# Bar Chart -->
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="messages_with_icon_title">
+                                        <!-- Basic Examples -->
+                                        <div class="row clearfix">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="header">
+                                                    <h2>
+                                                        ALL NOTIFICATIONS                                                       
+                                                    </h2>                                                      
+                                                </div>
+                                                <div class="body">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Time</th>
+                                                                    <th>Kind</th>
+                                                                    <th>User</th>
+                                                                    <th>Action</th>
+                                                                    <th>Start date</th>
+                                                                    <th>Description</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <th>Time</th>
+                                                                    <th>Kind</th>
+                                                                    <th>User</th>
+                                                                    <th>Action</th>
+                                                                    <th>Start date</th>
+                                                                    <th>Description</th>
+                                                                </tr>
+                                                            </tfoot>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>16 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on air</td>
+                                                                    <td>11/07/2018</td>
+                                                                    <td>Duration: 5 minutes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>12 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on water</td>
+                                                                    <td>05/07/2018</td>
+                                                                    <td>Duration: 6 minutes</td>
+                                                                </tr>   
+                                                                <tr>
+                                                                    <td>16 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on light</td>
+                                                                    <td>11/07/2018</td>
+                                                                    <td>Duration: 5 minutes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>12 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on water</td>
+                                                                    <td>05/07/2018</td>
+                                                                    <td>Duration: 6 minutes</td>
+                                                                </tr>                            
+                                                                <tr>
+                                                                    <td>16 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on ligth</td>
+                                                                    <td>11/07/2018</td>
+                                                                    <td>Duration: 5 minutes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>12 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on water</td>
+                                                                    <td>05/07/2018</td>
+                                                                    <td>Duration: 6 minutes</td>
+                                                                </tr>                            
+                                                                <tr>
+                                                                    <td>16 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on water</td>
+                                                                    <td>11/07/2018</td>
+                                                                    <td>Duration: 5 minutes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>12 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on water</td>
+                                                                    <td>05/07/2018</td>
+                                                                    <td>Duration: 6 minutes</td>
+                                                                </tr>                            
+                                                                <tr>
+                                                                    <td>16 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on water</td>
+                                                                    <td>11/07/2018</td>
+                                                                    <td>Duration: 5 minutes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>12 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on air</td>
+                                                                    <td>05/07/2018</td>
+                                                                    <td>Duration: 6 minutes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>16 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on water</td>
+                                                                    <td>11/07/2018</td>
+                                                                    <td>Duration: 5 minutes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>12 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on air</td>
+                                                                    <td>05/07/2018</td>
+                                                                    <td>Duration: 6 minutes</td>
+                                                                </tr>                                       
+                                                                <tr>
+                                                                    <td>16 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on air</td>
+                                                                    <td>11/07/2018</td>
+                                                                    <td>Duration: 5 minutes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>12 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on water</td>
+                                                                    <td>05/07/2018</td>
+                                                                    <td>Duration: 6 minutes</td>
+                                                                </tr>                           
+                                                                <tr>
+                                                                    <td>16 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on air</td>
+                                                                    <td>11/07/2018</td>
+                                                                    <td>Duration: 5 minutes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>12 : 00 : 00</td>
+                                                                    <td>Schedule</td>
+                                                                    <td>System</td>
+                                                                    <td>Turn on water</td>
+                                                                    <td>05/07/2018</td>
+                                                                    <td>Duration: 6 minutes</td>
+                                                                </tr>                                                            
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- #END# Basic Examples -->
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="settings_with_icon_title">
+                                        <div class="block-header">
+                                            <h2>BASIC CARD</h2>
+                                        </div>
+                                        <!-- Basic Card -->
+                                        <div class="row clearfix">
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                <div class="card">
+                                                    <div class="header">
+                                                        <h2>
+                                                            Basic Card Title
+                                                        </h2>
+                                                        <ul class="header-dropdown m-r--5">
+                                                            <li class="dropdown">
+                                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="material-icons">more_vert</i>
+                                                                </a>
+                                                                <ul class="dropdown-menu pull-right">
+                                                                    <li><a href="#">Turn On Water</a></li>
+                                                                    <li><a href="#">Turn Off Water</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="body">
+                                                        Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                <div class="card">
+                                                    <div class="header">
+                                                        <h2>
+                                                            Basic Card Title
+                                                        </h2>
+                                                        <ul class="header-dropdown m-r--5">
+                                                            <li class="dropdown">
+                                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="material-icons">more_vert</i>
+                                                                </a>
+                                                                <ul class="dropdown-menu pull-right">
+                                                                    <li><a href="#">Turn On Water</a></li>
+                                                                    <li><a href="#">Turn Off Water</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="body">
+                                                        Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                <div class="card">
+                                                    <div class="header">
+                                                        <h2>
+                                                            Basic Card Title
+                                                        </h2>
+                                                        <ul class="header-dropdown m-r--5">
+                                                            <li class="dropdown">
+                                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="material-icons">more_vert</i>
+                                                                </a>
+                                                                <ul class="dropdown-menu pull-right">
+                                                                    <li><a href="#">Turn On Water</a></li>
+                                                                    <li><a href="#">Turn Off Water</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="body">
+                                                        Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- #END# Basic Card -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #END# Tabs With Icon Title --> 
+            </div>
+        </section>
+
         <section>
             <!-- Left Sidebar -->
             <aside id="leftsidebar" class="sidebar">
@@ -284,216 +807,35 @@
             <!-- #END# Left Sidebar -->  
         </section>
 
-        <section class="content">
-            <div class="container-fluid">   
-                <!-- Basic Examples -->
-                <div class="row clearfix">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="card">
-                            <div class="header">
-                                <h2>
-                                    Notification
-                                </h2>
-                                <ul class="header-dropdown m-r--5">
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            <i class="material-icons">more_vert</i>
-                                        </a>
-                                        <ul class="dropdown-menu pull-right">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
-                                        <thead>
-                                            <tr>
-                                                <th>Time</th>
-                                                <th>Kind</th>
-                                                <th>User</th>
-                                                <th>Action</th>
-                                                <th>Start date</th>
-                                                <th>Description</th>
-                                            </tr>
-                                        </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Time</th>
-                                                <th>Kind</th>
-                                                <th>User</th>
-                                                <th>Action</th>
-                                                <th>Start date</th>
-                                                <th>Description</th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on air</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>   
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on light</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>                            
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on ligth</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>                            
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>                            
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on air</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on air</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>                                       
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on air</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>                           
-                                            <tr>
-                                                <td>16 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on air</td>
-                                                <td>11/07/2018</td>
-                                                <td>Duration: 5 minutes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 : 00 : 00</td>
-                                                <td>Schedule</td>
-                                                <td>System</td>
-                                                <td>Turn on water</td>
-                                                <td>05/07/2018</td>
-                                                <td>Duration: 6 minutes</td>
-                                            </tr>                                                            
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- #END# Basic Examples -->
-            </div>
-        </section>
+        
 
+        <!-- Jquery Core Js -->
+        <script src="{{URL::to('plugins/jquery/jquery.min.js') }}"></script>
 
-    <!-- Jquery Core Js -->
-    <script src="{{URL::to('plugins/jquery/jquery.min.js') }}"></script>
+        <!-- Bootstrap Core Js -->
+        <script src="{{URL::to('plugins/bootstrap/js/bootstrap.js') }}"></script>
 
-    <!-- Bootstrap Core Js -->
-    <script src="{{URL::to('plugins/bootstrap/js/bootstrap.js') }}"></script>
+        <!-- Select Plugin Js -->
+        <script src="{{URL::to('plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>
 
-    <!-- Select Plugin Js -->
-    <script src="{{URL::to('plugins/bootstrap-select/js/bootstrap-select.js') }}"></script>
+        <!-- Slimscroll Plugin Js -->
+        <script src="{{URL::to('plugins/jquery-slimscroll/jquery.slimscroll.js') }}"></script>
 
-    <!-- Slimscroll Plugin Js -->
-    <script src="{{URL::to('plugins/jquery-slimscroll/jquery.slimscroll.js') }}"></script>
+        <!-- Waves Effect Plugin Js -->
+        <script src="{{URL::to('plugins/node-waves/waves.js') }}"></script>
 
-    <!-- Waves Effect Plugin Js -->
-    <script src="{{URL::to('plugins/node-waves/waves.js') }}"></script>
+        <!-- Flot Chart Plugins Js -->
+        <script src="{{URL::to('plugins/flot-charts/jquery.flot.js') }}"></script>
+        <script src="{{URL::to('plugins/flot-charts/jquery.flot.resize.js') }}"></script>
+        <script src="{{URL::to('plugins/flot-charts/jquery.flot.pie.js') }}"></script>
+        <script src="{{URL::to('plugins/flot-charts/jquery.flot.categories.js') }}"></script>
+        <script src="{{URL::to('plugins/flot-charts/jquery.flot.time.js') }}"></script>
 
-    <!-- Light Gallery Plugin Js -->
-    <script src="{{URL::to('plugins/light-gallery/js/lightgallery-all.js') }}"></script>
+        <!-- Custom Js -->
+        <script src="{{URL::to('js/admin.js') }}"></script>
+        <script src="{{URL::to('js/pages/charts/flot.js') }}"></script>
 
-    <!-- Custom Js -->
-    <script src="{{URL::to('js/pages/medias/image-gallery.js') }}"></script>
-    <script src="{{URL::to('js/admin.js') }}"></script>
-
-    <!-- Demo Js -->
-    <script src="{{URL::to('js/demo.js') }}"></script>
+        <!-- Demo Js -->
+        <script src="{{URL::to('js/demo.js') }}"></script>
     </body>
 </html>
