@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Farm;
-use Carbon\Carbon;
-use App\Product;
-use App\Device;
 use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
+use App\Device;
+use App\Farm;
 
-class MonitorController extends Controller
+class DeviceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,8 +17,9 @@ class MonitorController extends Controller
      */
     public function index()
     {
-        $products = Product::all()->where('user_id', Auth::id());
-        return view('monitor/index', compact('products'));
+        $devices = Device::where('user_id', Auth::id())->get();
+        $farms = Farm::all()->where('user_id', Auth::id());
+        return view('monitor/device/index', compact(['devices', 'farms']));
     }
 
     /**
@@ -39,10 +39,10 @@ class MonitorController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+     {
         $this->validate($request,[
             'name' => 'required',
-            'farm_id' => 'required',
+            'product_id' => 'required',
             'image' => 'required|mimes:jpeg,jpg,bmp,png',
             'description' => 'required',
             
@@ -66,14 +66,15 @@ class MonitorController extends Controller
             $imagename = "default.png";
         }
 
-        $farm = new Farm();
-        $farm->farm_id = $request->farm_id;
+        $farm = new Device();
+        $farm->user_id = Auth::id();
+        $farm->product_id = $request->product_id;
         $farm->name = $request->name;
         $farm->image = $imagename;
         $farm->description = $request->description;
 
         $farm->save();
-        return redirect()->route('monitor.index');
+        return redirect()->route('device.index');
     }
 
     /**

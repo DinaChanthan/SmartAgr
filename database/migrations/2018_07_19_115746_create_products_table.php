@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateManagesTable extends Migration
+class CreateProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class CreateManagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('manages', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('farm_id')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->string('season_name');
             $table->string('production_area');
             $table->string('process');
@@ -26,6 +28,8 @@ class CreateManagesTable extends Migration
             $table->string('product_name');
             $table->string('product_image');
             $table->string('description');
+            $table->foreign('farm_id')->references('id')->on('farms')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('farms')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -37,6 +41,6 @@ class CreateManagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('manages');
+        Schema::dropIfExists('products');
     }
 }

@@ -74,8 +74,7 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a href="#" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
-                    <a href="#" class="bars"></a>
-                    <a class="navbar-brand" href="{{ route('manages.index') }}">Smart Agriculture</a>
+                    <a class="navbar-brand" href="{{ route('dashboard') }}">Smart Agriculture</a>
                 </div>
                 
             </div>
@@ -86,7 +85,7 @@
             <div class="container-fluid">       
                 <div class="row">
                     <div class="col-xs-6 col-md-3">
-                        <a href="{{ route('manage') }}" class="thumbnail">
+                        <a href="{{ route('crop') }}" class="thumbnail">
                             <img src="{{URL::to('images/image-gallery/thumb/thumb-25.jpg') }}">
                         </a>
                     </div>
@@ -157,7 +156,7 @@
                     <!-- Footer -->
                     <div class="legal">
                         <div class="copyright">
-                            &copy; 2018 - 2019 <a href="#">Smart Agriculture</a>.
+                            &copy; 2018 - 2019 <a href="{{ route('dashboard') }}">Smart Agriculture</a>.
                         </div>
                         <div class="version">
                             <b>Version: </b> 1.0.0

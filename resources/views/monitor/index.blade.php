@@ -73,7 +73,7 @@
                 <div class="navbar-header">
                     <a href="#" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                     <a href="#" class="bars"></a>
-                    <a class="navbar-brand" href="{{ route('manages.index') }}">Smart Agriculture</a>
+                    <a class="navbar-brand" href="{{ route('monitor.index') }}">Smart Agriculture</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -198,7 +198,6 @@
 
         <section class="content">
             <div class="container-fluid">
-                <!-- Tabs With Icon Title -->
                 <div class="row clearfix">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
@@ -219,8 +218,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="body">
-                                <!-- Nav tabs -->
+                            <div class="body">    
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li role="presentation" class="active">
                                         <a href="#home_with_icon_title" data-toggle="tab">
@@ -243,11 +241,8 @@
                                         </a>
                                     </li>
                                 </ul>
-
-                                <!-- Tab panes -->
                                 <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane fade in active" id="home_with_icon_title">
-                                        <!-- Custom Content -->
                                         <div class="row clearfix">
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div class="header">
@@ -365,13 +360,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- #END# Custom Content -->
                                     </div>
+
                                     <div role="tabpanel" class="tab-pane fade" id="profile_with_icon_title">
-                                        <!-- Real-Time Chart -->
                                         <div class="row clearfix">
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                            <div class="header">
+                                                <div class="header">
                                                     <h2>
                                                         ALL HISTORY                                                    
                                                     </h2>                                                      
@@ -392,8 +386,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- #END# Real-Time Chart -->
-                                        <!-- Multiple Axis -->
+                                        
                                         <div class="row clearfix">
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div class="card">
@@ -406,8 +399,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- #END# Multiple Axis -->
-                                        <!-- Tracking -->
+                                        
                                         <div class="row clearfix">
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div class="card">
@@ -420,9 +412,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- #END# Tracking -->
+                                       
                                         <div class="row clearfix">
-                                            <!-- Pie Chart -->
+                                            
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                 <div class="card">
                                                     <div class="header">
@@ -433,8 +425,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- #END# Pie Chart -->
-                                            <!-- Bar Chart -->
+                                            
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                 <div class="card">
                                                     <div class="header">
@@ -457,11 +448,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- #END# Bar Chart -->
+                                            
                                         </div>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="messages_with_icon_title">
-                                        <!-- Basic Examples -->
+
+                                    <div role="tabpanel" class="tab-pane fade" id="messages_with_icon_title">  
                                         <div class="row clearfix">
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div class="header">
@@ -627,94 +618,89 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- #END# Basic Examples -->
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="settings_with_icon_title">
-                                        <div class="block-header">
-                                            <h2>BASIC CARD</h2>
-                                        </div>
-                                        <!-- Basic Card -->
-                                        <div class="row clearfix">
-                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                                <div class="card">
-                                                    <div class="header">
-                                                        <h2>
-                                                            Basic Card Title
-                                                        </h2>
-                                                        <ul class="header-dropdown m-r--5">
-                                                            <li class="dropdown">
-                                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                                                    <i class="material-icons">more_vert</i>
-                                                                </a>
-                                                                <ul class="dropdown-menu pull-right">
-                                                                    <li><a href="#">Turn On Water</a></li>
-                                                                    <li><a href="#">Turn Off Water</a></li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="body">
-                                                        Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
-                                                    </div>
-                                                </div>
-                                            </div>
 
-                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                                <div class="card">
-                                                    <div class="header">
-                                                        <h2>
-                                                            Basic Card Title
-                                                        </h2>
-                                                        <ul class="header-dropdown m-r--5">
-                                                            <li class="dropdown">
-                                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                                                    <i class="material-icons">more_vert</i>
-                                                                </a>
-                                                                <ul class="dropdown-menu pull-right">
-                                                                    <li><a href="#">Turn On Water</a></li>
-                                                                    <li><a href="#">Turn Off Water</a></li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
+                                    <div role="tabpanel" class="tab-pane fade" id="settings_with_icon_title">    
+                                        <div class="row clearfix">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="body">
+                                                    <div class="icon-and-text-button-demo">
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#defaultModal">
+                                                            <i class="material-icons">extension</i>    
+                                                            <span>Add New Device</span>
+                                                        </button>
+                                                        
+                                                        <a href="{{ route('device.index') }}" type="button" class="btn btn-success waves-effect">ALL DEVICES</a>
+                                                       
                                                     </div>
-                                                    <div class="body">
-                                                        Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                                <div class="card">
-                                                    <div class="header">
-                                                        <h2>
-                                                            Basic Card Title
-                                                        </h2>
-                                                        <ul class="header-dropdown m-r--5">
-                                                            <li class="dropdown">
-                                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                                                    <i class="material-icons">more_vert</i>
-                                                                </a>
-                                                                <ul class="dropdown-menu pull-right">
-                                                                    <li><a href="#">Turn On Water</a></li>
-                                                                    <li><a href="#">Turn Off Water</a></li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="body">
-                                                        Quis pharetra a pharetra fames blandit. Risus faucibus velit Risus imperdiet mattis neque volutpat, etiam lacinia netus dictum magnis per facilisi sociosqu. Volutpat. Ridiculus nostra.
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
-                                        <!-- #END# Basic Card -->
+                                        
+                                        <div class="modal fade" id="defaultModal" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 style="text-align: center;" class="modal-title" id="defaultModalLabel">Create New Device</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form method="POST" action="{{ route('device.store') }}" enctype="multipart/form-data">
+                                                        @csrf
+                                                            <div class="row clearfix">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <div class="form-line">
+                                                                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row clearfix">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <div class="form-line">
+                                                                            <input type="file" name="image" class="form-control" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <select class="form-control show-tick" name="product_id" required>
+                                                                        @foreach($products as $product)
+                                                                            <option {{ $product->id == $product->id ? 'selected' : '' }} value="{{ $product->id }}">{{ $product->product_name }}</option>
+                                                                        @endforeach
+                                                                        </select>     
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row clearfix">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <div class="form-line">
+                                                                            <input type="text" name="description" class="form-control" placeholder="Describe about your Farm" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="modal-footer">
+                                                                <button type="submit" class="btn btn-link waves-effect">SAVE CHANGES</button>
+                                                                <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                                                            </div>
+                                                        </form>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>                 
+                                       
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- #END# Tabs With Icon Title --> 
             </div>
         </section>
 
@@ -757,26 +743,26 @@
                     <ul class="list">
                        
                         <li>
-                            <a href="{{route('manages.index')}}">
+                            <a href="{{route('farm.index')}}">
                                 <i class="material-icons">insert_invitation</i>
                                 <span>Product Management</span>
                             </a>
                         </li>
                        
                         <li class="active">
-                            <a href="{{ route('monitor') }}">
+                            <a href="{{ route('monitor.index') }}">
                                 <i class="material-icons">desktop_mac</i>
                                 <span>Product Monitoring</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('analytic') }}">
+                            <a href="#">
                                 <i class="material-icons">insert_chart</i>
                                 <span>Analytics</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('ecosystem') }}">
+                            <a href="#">
                                 <i class="material-icons">widgets</i>
                                 <span>Ecosystem</span>
                             </a>
@@ -796,7 +782,7 @@
                 <!-- Footer -->
                 <div class="legal">
                     <div class="copyright">
-                        &copy; 2018 - 2019 <a href="{{ route('monitor') }}">Smart Agriculture</a>.
+                        &copy; 2018 - 2019 <a href="{{ route('monitor.index') }}">Smart Agriculture</a>.
                     </div>
                     <div class="version">
                         <b>Version: </b> 1.0.0
@@ -806,9 +792,7 @@
             </aside>
             <!-- #END# Left Sidebar -->  
         </section>
-
-        
-
+       
         <!-- Jquery Core Js -->
         <script src="{{URL::to('plugins/jquery/jquery.min.js') }}"></script>
 

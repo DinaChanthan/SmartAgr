@@ -8,18 +8,18 @@ use App\Product;
 use App\Farm;
 use Illuminate\Support\Facades\Auth;
 
-class ManageController extends Controller
+class ProductController extends Controller
 {
-
     /**
-     * Show the application dashboard.
+     * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $items = Farm::where('user_id', Auth::id())->get();
-        return view('manage/index', compact('items'));
+        //$farms = Product::all();
+        //$farms->where('user_id', Auth::id())->get();
+        //return view('manage/crop/product/index', compact('farms'));
     }
 
     /**
@@ -29,8 +29,8 @@ class ManageController extends Controller
      */
     public function create()
     {
-        //$items = Manage::all();
-        return view('manage/create', compact('items'));
+        $farms = Farm::where('user_id', Auth::id())->get();
+        return view('manage/crop/product/create', compact('farms'));
     }
 
     /**
@@ -41,7 +41,7 @@ class ManageController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request,[
+         $this->validate($request,[
             'season_name' => 'required',
             'farm_id' => 'required',
             'production_area' => 'required',
@@ -65,18 +65,20 @@ class ManageController extends Controller
             $currentDate = Carbon::now()->toDateString();
             $imagename = $slug.'-'.$currentDate.'-'. uniqid() .'.'. $image->getClientOriginalExtension();
 
-            if (!file_exists('uploads/item'))
+            if (!file_exists('uploads/images/product'))
             {
-                mkdir('uploads/item',0777,true);
+                mkdir('uploads/images/product',0777,true);
             }
-            $image->move('uploads/item',$imagename);
+            $image->move('uploads/images/product',$imagename);
 
         }else{
             $imagename = "default.png";
         }
 
-        $product = new Manage();
+        
+        $product = new Product();
         $product->farm_id = $request->farm_id;
+        $product->user_id = Auth::id();
         $product->season_name = $request->season_name;
         $product->production_area = $request->production_area;
         $product->process = $request->process;
@@ -91,11 +93,43 @@ class ManageController extends Controller
 
         $product->save();
         return redirect()->route('farm.index');
-
     }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
 
-     /**
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+       //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id

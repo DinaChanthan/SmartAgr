@@ -17,13 +17,20 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/dashboard', 'HomeController@index')->name('dashboard');
-Route::get('/manage', 'HomeController@manage')->name('manage');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::get('/crop', 'DashboardController@manage')->name('crop');
 
-Route::resource('manages', 'ManageController');
+Route::resource('farm', 'FarmController');
+Route::resource('product', 'ProductController');
+Route::resource('monitor', 'MonitorController');
+Route::resource('device', 'DeviceController');
 
-Route::get('/monitor', 'MonitorController@index')->name('monitor');
 Route::get('/analytic', 'AnalyticController@index')->name('analytic');
 Route::get('/ecosystem', 'EcosystemController@index')->name('ecosystem');
+
+
+Route::post('status/{id}', 'StatusController@status')->name('status');
+
+
 
 

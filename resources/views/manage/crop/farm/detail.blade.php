@@ -8,7 +8,8 @@
         <!-- Icon-->
         <link rel="shortcut icon" href="{{ asset('images/smart_agriculture.png') }}">
 
-        <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+        <!-- Favicon-->
+        <link rel="icon" href="{{ URL::to('favicon.ico') }}" type="image/x-icon">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -23,14 +24,8 @@
         <!-- Animation Css -->
         <link href="{{URL::to('plugins/animate-css/animate.css') }}" rel="stylesheet" />
 
-        <!-- Bootstrap Material Datetime Picker Css -->
-        <link href="{{URL::to('plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css') }}" rel="stylesheet" />
-
-        <!-- Wait Me Css -->
-        <link href="{{URL::to('plugins/waitme/waitMe.css') }}" rel="stylesheet" />
-
-        <!-- Bootstrap Select Css -->
-        <link href="{{URL::to('plugins/bootstrap-select/css/bootstrap-select.css') }}" rel="stylesheet" />
+        <!-- Light Gallery Plugin Css -->
+        <link href="{{URL::to('plugins/light-gallery/css/lightgallery.css') }}" rel="stylesheet">
 
         <!-- Custom Css -->
         <link href="{{URL::to('css/style.css') }}" rel="stylesheet">
@@ -80,7 +75,7 @@
                 <div class="navbar-header">
                     <a href="#" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                     <a href="#" class="bars"></a>
-                    <a class="navbar-brand" href="{{ route('manages.index') }}">Smart Agriculture</a>
+                    <a class="navbar-brand" href="{{ route('farm.index') }}">Smart Agriculture</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -203,121 +198,24 @@
         </nav>
         <!-- #Top Bar -->
 
+        <!-- Content -->
         <section class="content">
             <div class="container-fluid">
-                <div class="row clearfix">
-                   <!-- With Captions -->
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="card">
-                            <div class="body">
-                                <div id="carousel-example-generic_2" class="carousel slide" data-ride="carousel">
-                                    <!-- Indicators -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carousel-example-generic_2" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel-example-generic_2" data-slide-to="1"></li>
-                                        <li data-target="#carousel-example-generic_2" data-slide-to="2"></li>
-                                    </ol>
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner" role="listbox">
-                                        <div class="item active">
-                                            <img src="{{URL::to('images/image-gallery/22.jpg') }}" />
-                                            <div class="carousel-caption">
-                                                <h3>First slide label</h3>
-                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                            </div>
-                                        </div>  
-                                        <div class="item">
-                                            <img src="{{URL::to('images/image-gallery/23.jpg') }}" />
-                                            <div class="carousel-caption">
-                                                <h3>First slide label</h3>
-                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                            </div>
-                                        </div>        
-                                        <div class="item">
-                                            <img src="{{URL::to('images/image-gallery/25.jpg') }}" />
-                                            <div class="carousel-caption">
-                                                <h3>First slide label</h3>
-                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                            </div>
-                                        </div>                                              
-                                    </div>
-
-                                    <!-- Controls -->
-                                    <a class="left carousel-control" href="#carousel-example-generic_2" role="button" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#carousel-example-generic_2" role="button" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- #END# With Captions -->
-                    <!-- With Captions -->
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="card">
-                            <div class="body">
-                                <div id="carousel-example-generic_2" class="carousel slide" data-ride="carousel">
-                                    <!-- Indicators -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carousel-example-generic_2" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel-example-generic_2" data-slide-to="1"></li>
-                                        <li data-target="#carousel-example-generic_2" data-slide-to="2"></li>
-                                    </ol>
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner" role="listbox">
-                                        <div class="item active">
-                                            <img src="{{URL::to('images/image-gallery/22.jpg') }}" />
-                                            <div class="carousel-caption">
-                                                <h3>First slide label</h3>
-                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <img src="{{URL::to('images/image-gallery/23.jpg') }}" />
-                                            <div class="carousel-caption">
-                                                <h3>Second slide label</h3>
-                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                            </div>
-                                        </div>
-                                        <div class="item">
-                                            <img src="{{URL::to('images/image-gallery/25.jpg') }}" />
-                                            <div class="carousel-caption">
-                                                <h3>Third slide label</h3>
-                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Controls -->
-                                    <a class="left carousel-control" href="#carousel-example-generic_2" role="button" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#carousel-example-generic_2" role="button" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- #END# With Captions -->
+                <div class="block-header">
+                    <a href="{{ route('product.create') }}" class="btn btn-primary"><i class="material-icons">add</i> NEW PRODUCTS</a>
                 </div>
-
-                <!-- Multi Column -->
+               
+                <!-- Custom Content -->
                 <div class="row clearfix">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    ADD NEW AGRICULTURE PRODUCT
+                                    ALL AGRICULTURE PRODUCTS  
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <a href="{{ route('farm.create') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                             <i class="material-icons">more_vert</i>
                                         </a>
                                         <ul class="dropdown-menu pull-right">
@@ -329,127 +227,53 @@
                                 </ul>
                             </div>
                             <div class="body">
-                                <form method="POST" action="{{ route('manages.store') }}" enctype="multipart/form-data">
-                                @csrf
-                                    <div class="row clearfix">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="text" name="season_name" class="form-control" placeholder="Season Name" required>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="text" name="production_area" class="form-control" placeholder="Production Area" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row clearfix">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="text" name="process" class="form-control" placeholder="Process" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">    
-                                                <select class="form-control show-tick" name="season_manager" required>
-                                                    <option value="">Select Season Manager</option>
-                                                    <option value="chanthan">chanthan</option>
-                                                    <option value="chanthet">chanthet</option>
-                                                    <option value="rany">rany</option>
-                                                    <option value="chanthea">chanthea</option>
-                                                    <option value="dina">dina</option>
-                                                </select>                                  
-                                            </div>
-                                        </div>   
-                                    </div>
-
-                                    <div class="row clearfix">
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="datepicker" name="start_date" class="datepicker form-control" placeholder="Start Date" required>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="datepicker" name="end_date" class="datepicker form-control" placeholder="End Date" required>
-                                                </div>
+                               <div class="row">
+                                
+                                    @foreach($farms as $key=>$farm)
+                                   
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="thumbnail">
+                                            <a href="#">
+                                                <img class="img-responsive" src="{{ asset('uploads/images/product/'.$farm->product_image) }}">
+                                            </a>
+                                            <div class="caption">
+                                                <h3 style="text-align: center;">{{ $farm->product_name }}</h3>
+                                                <h5>Season Name: <small>{{ $farm->season_name }}</small></h5>
+                                                <h5>Season Manager: <small>{{ $farm->season_manager }}</small></h5>
+                                                <h5>Start Date: <small>{{ $farm->start_date }}</small></h5>
+                                                <h5>End Date: <small>{{ $farm->start_date }}</small></h5>
+                                                <h5>Process: <small>{{ $farm->process }}</small></h5>
+                                                <h5>Production Area: <small>{{ $farm->production_area }}</small> m<sup>2</sup></h5>
+                                                
+                                                <p>
+                                                    <a href="#" class="btn btn-warning waves-effect" role="button">Edit</a>
+                                                    <a href="{{ route('farm.destroy', $farm->id) }}" class="btn btn-danger waves-effect" role="button">Delete</a>
+                                                </p>
+                                                
                                             </div>
                                         </div>
                                     </div>
+                                    
 
-                                    <div class="row clearfix">
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="datepicker" name="planting_date" class="datepicker form-control" placeholder="Planting Date" required>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="datepicker" name="harvest_date" class="datepicker form-control" placeholder="Harvest Date" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="text" name="product_name" class="form-control" placeholder="Product Name" required>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="file" name="product_image" class="form-control" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row clearfix">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <div class="form-line">
-                                                    <input type="text" name="description" class="form-control" placeholder="Describe about your product" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <a href="{{ route('manages.index') }}" class="btn btn-danger m-t-15 waves-effect">Back</a>
-                                    <button type="submit" class="btn btn-primary m-t-15 waves-effect">ADD PRODUCT</button>
-                                </form>
+                                    @endforeach
+                                
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- #END# Multi Column -->
+                <!-- #END# Custom Content -->
             </div>
         </section>
+        <!-- #END Content -->
 
         <section>
             <!-- Left Sidebar -->
-                <aside id="leftsidebar" class="sidebar">
+            <aside id="leftsidebar" class="sidebar">
                     <!-- User Info -->
                     <div class="user-info">
                         <div class="image">
-                            <img src="{{URL::to('images/user.png') }}" width="48" height="48" alt="User" />
+                            <img src="{{ URL::to('images/user.png') }}" width="48" height="48" alt="User" />
                         </div>
                         <div class="info-container">
                             <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}</div>
@@ -457,7 +281,9 @@
                             <div class="btn-group user-helper-dropdown">
                                 <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                                 <ul class="dropdown-menu pull-right">
+                                    
                                     <li><a href="#"><i class="material-icons">person</i>Profile</a></li>
+                                    
                                     <li role="seperator" class="divider"></li>
                                     <li><a href="#"><i class="material-icons">group</i>Followers</a></li>
                                     <li><a href="#"><i class="material-icons">shopping_cart</i>Sales</a></li>
@@ -482,14 +308,14 @@
                         <ul class="list">
                            
                             <li class="active">
-                                <a href="{{route('manages.index')}}">
+                                <a href="{{ route('farm.index') }}">
                                     <i class="material-icons">insert_invitation</i>
                                     <span>Product Management</span>
                                 </a>
                             </li>
                            
                             <li>
-                                <a href="{{ route('monitor') }}">
+                                <a href="{{ route('monitor.index') }}">
                                     <i class="material-icons">desktop_mac</i>
                                     <span>Product Monitoring</span>
                                 </a>
@@ -521,15 +347,15 @@
                     <!-- Footer -->
                     <div class="legal">
                         <div class="copyright">
-                            &copy; 2018 - 2019 <a href="{{ route('monitor') }}">Smart Agriculture</a>.
+                            &copy; 2018 - 2019 <a href="#">Smart Agriculture</a>.
                         </div>
                         <div class="version">
                             <b>Version: </b> 1.0.0
                         </div>
                     </div>
                     <!-- #Footer -->
-                </aside>
-                <!-- #END# Left Sidebar -->  
+            </aside>
+            <!-- #END# Left Sidebar -->  
         </section>
 
        
@@ -549,38 +375,15 @@
         <!-- Waves Effect Plugin Js -->
         <script src="{{URL::to('plugins/node-waves/waves.js') }}"></script>
 
-        <!-- Autosize Plugin Js -->
-        <script src="{{URL::to('plugins/autosize/autosize.js') }}"></script>
-
-        <!-- Moment Plugin Js -->
-        <script src="{{URL::to('plugins/momentjs/moment.js') }}"></script>
-
-        <!-- Bootstrap Material Datetime Picker Plugin Js -->
-        <script src="{{URL::to('plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js') }}"></script>
+        <!-- Light Gallery Plugin Js -->
+        <script src="{{URL::to('plugins/light-gallery/js/lightgallery-all.js') }}"></script>
 
         <!-- Custom Js -->
+        <script src="{{URL::to('js/pages/medias/image-gallery.js') }}"></script>
         <script src="{{URL::to('js/admin.js') }}"></script>
-        <script src="{{URL::to('js/pages/forms/basic-form-elements.js') }}"></script>
+
 
         <!-- Demo Js -->
         <script src="{{URL::to('js/demo.js') }}"></script>
     </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

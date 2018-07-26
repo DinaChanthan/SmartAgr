@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Farm;
-use Carbon\Carbon;
-use App\Product;
-use App\Device;
 use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
+use App\Farm;
+use App\Product;
 
-class MonitorController extends Controller
+
+class FarmController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,8 +18,8 @@ class MonitorController extends Controller
      */
     public function index()
     {
-        $products = Product::all()->where('user_id', Auth::id());
-        return view('monitor/index', compact('products'));
+        $farms = Farm::where('user_id', Auth::id())->get();
+        return view('manage/crop/farm/index', compact('farms'));
     }
 
     /**
@@ -29,7 +29,8 @@ class MonitorController extends Controller
      */
     public function create()
     {
-        //
+        $farms = Farm::all();
+        return view('farm.create', compact('farms'));
     }
 
     /**
@@ -39,10 +40,9 @@ class MonitorController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+     {
         $this->validate($request,[
             'name' => 'required',
-            'farm_id' => 'required',
             'image' => 'required|mimes:jpeg,jpg,bmp,png',
             'description' => 'required',
             
@@ -56,24 +56,25 @@ class MonitorController extends Controller
             $currentDate = Carbon::now()->toDateString();
             $imagename = $slug.'-'.$currentDate.'-'. uniqid() .'.'. $image->getClientOriginalExtension();
 
-            if (!file_exists('uploads/images/device'))
+            if (!file_exists('uploads/images/farm'))
             {
-                mkdir('uploads/images/device',0777,true);
+                mkdir('uploads/images/farm',0777,true);
             }
-            $image->move('uploads/images/device',$imagename);
+            $image->move('uploads/images/farm',$imagename);
 
         }else{
             $imagename = "default.png";
         }
 
         $farm = new Farm();
-        $farm->farm_id = $request->farm_id;
+        $farm->user_id = Auth::id();
         $farm->name = $request->name;
-        $farm->image = $imagename;
         $farm->description = $request->description;
+        $farm->image = $imagename;
 
         $farm->save();
-        return redirect()->route('monitor.index');
+        return redirect()->route('farm.index');
+
     }
 
     /**
@@ -84,7 +85,8 @@ class MonitorController extends Controller
      */
     public function show($id)
     {
-        //
+        $farms = Product::all()->where('farm_id', $id);
+        return view('manage/crop/farm/detail', compact('farms'));
     }
 
     /**
@@ -95,7 +97,8 @@ class MonitorController extends Controller
      */
     public function edit($id)
     {
-        //
+        // $farm = Farm::find($id);
+        // return view('farm.detail', compact('farm'));
     }
 
     /**
@@ -118,6 +121,12 @@ class MonitorController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $farms = Product::find($id);
+        if (file_exists('uploads/images/product/'.$farms->image))
+        {
+            unlink('uploads/images/product/'.$farms->image);
+        }
+        $farms->delete();
+        return redirect()->back();
     }
 }

@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Manage;
+use App\Farm;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\DB;
 
-class HomeController extends Controller
+class DashboardController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -24,7 +26,7 @@ class HomeController extends Controller
 
     public function manage()
     {
-        $items = Manage::all();
-        return view('manage/index', compact('items'));
+        $farms = Farm::where('user_id', Auth::id())->get();
+        return view('manage/crop/farm/index', compact('farms'));
     }
 }
