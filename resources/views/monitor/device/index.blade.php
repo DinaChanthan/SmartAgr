@@ -309,7 +309,7 @@
                                                                 </a>
                                                                 <ul class="dropdown-menu pull-right">
                                                                     <li><a href="{{ route('device.edit', $device->id) }}">Turn On Water<i class="material-icons">gamepad</i></a></li>
-                                                                    <li><a href="#">Turn Off Water<i class="material-icons">close</i></a></li>
+                                                                    <li><a href="{{ route('status.edit', $device->id) }}">Turn Off Water<i class="material-icons">close</i></a></li>
                                                                     <li><a href="#">Edit<i class="material-icons">mode_edit</i></a></li>
                                                                     <li><a href="#">Delete<i class="material-icons">delete</i></a></li>
                                                                 </ul>

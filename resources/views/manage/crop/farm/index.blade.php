@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
         <title>Smart Agriculture</title>
 
         <!-- Icon-->
@@ -253,13 +254,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('analytic') }}">
+                                <a href="#">
                                     <i class="material-icons">insert_chart</i>
                                     <span>Analytics</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('ecosystem') }}">
+                                <a href="#">
                                     <i class="material-icons">widgets</i>
                                     <span>Ecosystem</span>
                                 </a>

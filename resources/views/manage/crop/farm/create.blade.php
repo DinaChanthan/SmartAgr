@@ -506,13 +506,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('analytic') }}">
+                                <a href="#">
                                     <i class="material-icons">insert_chart</i>
                                     <span>Analytics</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('ecosystem') }}">
+                                <a href="#">
                                     <i class="material-icons">widgets</i>
                                     <span>Ecosystem</span>
                                 </a>

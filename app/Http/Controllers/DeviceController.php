@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use App\Device;
 use App\Farm;
@@ -96,7 +97,8 @@ class DeviceController extends Controller
      */
     public function edit($id)
     {
-        //
+        DB::table('devices')->where('product_id', $id)->update(['status' => 1]);
+        return redirect()->back();
     }
 
     /**

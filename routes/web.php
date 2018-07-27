@@ -24,12 +24,12 @@ Route::resource('farm', 'FarmController');
 Route::resource('product', 'ProductController');
 Route::resource('monitor', 'MonitorController');
 Route::resource('device', 'DeviceController');
+Route::resource('status', 'StatusController');
 
-Route::get('/analytic', 'AnalyticController@index')->name('analytic');
-Route::get('/ecosystem', 'EcosystemController@index')->name('ecosystem');
+// Route::get('/analytic', 'AnalyticController@index')->name('analytic');
+// Route::get('/ecosystem', 'EcosystemController@index')->name('ecosystem');
 
 
-Route::post('status/{id}', 'StatusController@status')->name('status');
 
 
 
