@@ -419,7 +419,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <div class="form-line">
-                                                    <input type="text" name="product_name" class="form-control" placeholder="Product Name" required>
+                                                    <input type="text" name="name" class="form-control" placeholder="Product Name" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -493,7 +493,7 @@
                         <ul class="list">
                            
                             <li class="active">
-                                <a href="{{route('product.index')}}">
+                                <a href="{{route('farm.index')}}">
                                     <i class="material-icons">insert_invitation</i>
                                     <span>Product Management</span>
                                 </a>

@@ -247,7 +247,7 @@
                                                 
                                                 <p>
                                                     <a href="#" class="btn btn-warning waves-effect" role="button">Edit</a>
-                                                    <a href="{{ route('farm.destroy', $farm->id) }}" class="btn btn-danger waves-effect" role="button">Delete</a>
+                                                    <a href="#" class="btn btn-danger waves-effect" role="button">Delete</a>
                                                 </p>
                                                 
                                             </div>

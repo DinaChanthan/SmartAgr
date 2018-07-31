@@ -236,7 +236,7 @@
                                                 <img class="img-responsive" src="{{ asset('uploads/images/product/'.$farm->product_image) }}">
                                             </a>
                                             <div class="caption">
-                                                <h3 style="text-align: center;">{{ $farm->product_name }}</h3>
+                                                <h3 style="text-align: center;">{{ $farm->name }}</h3>
                                                 <h5>Season Name: <small>{{ $farm->season_name }}</small></h5>
                                                 <h5>Season Manager: <small>{{ $farm->season_manager }}</small></h5>
                                                 <h5>Start Date: <small>{{ $farm->start_date }}</small></h5>

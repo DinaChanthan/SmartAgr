@@ -29,7 +29,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $farms = Farm::where('user_id', Auth::id())->get();
+        $farms = Farm::all()->where('user_id', Auth::id());
         return view('manage/crop/product/create', compact('farms'));
     }
 
@@ -51,7 +51,7 @@ class ProductController extends Controller
             'end_date' => 'required',
             'planting_date' => 'required',
             'harvest_date' => 'required',
-            'product_name' => 'required',
+            'name' => 'required',
             'product_image' => 'required|mimes:jpeg,jpg,bmp,png',
             'description' => 'required',
             
@@ -87,7 +87,7 @@ class ProductController extends Controller
         $product->end_date = $request->end_date;
         $product->planting_date = $request->planting_date;
         $product->harvest_date = $request->harvest_date;
-        $product->product_name = $request->product_name;
+        $product->name = $request->name;
         $product->description = $request->description;
         $product->product_image = $imagename;
 

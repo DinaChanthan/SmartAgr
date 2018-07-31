@@ -15,7 +15,7 @@
         $response = array();
 
         //query statement to retrieve data from database
-        $sql = "SELECT * FROM led WHERE id ='$id'";
+        $sql = "SELECT * FROM devices WHERE id ='$id'";
 
         //query to retrieve data from database
         $result = $conn->query($sql);
@@ -30,7 +30,7 @@
 
                 $led = array();
                 $led["id"] = $row["id"];
-                $led["status"] = $row["statuse"];
+                $led["status"] = $row["status"];
                 
 
                 //push all the items

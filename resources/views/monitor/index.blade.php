@@ -667,7 +667,7 @@
                                                                     <div class="form-group">
                                                                         <select class="form-control show-tick" name="product_id" required>
                                                                         @foreach($products as $product)
-                                                                            <option {{ $product->id == $product->id ? 'selected' : '' }} value="{{ $product->id }}">{{ $product->product_name }}</option>
+                                                                            <option {{ $product->id == $product->id ? 'selected' : '' }} value="{{ $product->id }}">{{ $product->name }}</option>
                                                                         @endforeach
                                                                         </select>     
                                                                     </div>

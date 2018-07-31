@@ -17,6 +17,7 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->integer('farm_id')->unsigned();
             $table->integer('user_id')->unsigned();
+            $table->string('name');
             $table->string('season_name');
             $table->string('production_area');
             $table->string('process');
@@ -25,11 +26,10 @@ class CreateProductsTable extends Migration
             $table->string('end_date');
             $table->string('planting_date');
             $table->string('harvest_date');
-            $table->string('product_name');
             $table->string('product_image');
             $table->string('description');
             $table->foreign('farm_id')->references('id')->on('farms')->onDelete('cascade');
-            $table->foreign('user_id')->references('id')->on('farms')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

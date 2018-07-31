@@ -67,7 +67,7 @@ class ManageController extends Controller
 
             if (!file_exists('uploads/item'))
             {
-                mkdir('uploads/item',0777,true);
+                mkdir('uploads/item',0777,true);    
             }
             $image->move('uploads/item',$imagename);
 
